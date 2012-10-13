@@ -34,7 +34,7 @@ maria.Model.subclass(myApp, 'PersonModel', {
 maria.SubsetModel.subclass(myapp, 'AdultsModel', {
     properties: {
         predicate: function(personModel) {
-            return personModel.isDone();
+            return personModel.isAdult();
         }
     }
 });
